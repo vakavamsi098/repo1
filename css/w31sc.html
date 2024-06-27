@@ -2,376 +2,610 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <style> 
-       body fieldset {
-           background-color: antiquewhite;
-       }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-       ul {
-           list-style-type: none;
-           margin: 0;
-           padding: 0;
-           overflow: hidden;
-           background-color: #333;
-       }
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            font-style: normal;
+        }
+        #background{
+            background-color: black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #php{
+            display: inline-block;
+            padding: 2%;
+            margin:2%;
+            background-color: #FFF4A3;
+            width: 40%;
+            text-align: center;
+            border-radius: 5px;
+        }
+        #but{
+            background-color: black;
+            color: azure;
+            border-radius: 50px;
+            width: 120px;
+            height: 30px;
+        }
+        #jquery{
+            display: inline-block;
+            padding: 2%;
+            margin:2%;
+            background-color: violet;
+            width: 40%;
+            text-align: center;
+            border-radius: 5px;
+        }
+        #js{
+            display: inline-block;
+            padding: 2%;
+            margin :2%;
+            background-color: tan;
+            width: 40%;
+            text-align: center;
+            border-radius: 5px;
+        }
+        #c{
+            display: inline-block;
+            padding: 2%;
+            margin :2%;
+            background-color: #96D4D4;
+            width: 40%;
+            text-align: center;
+            border-radius: 5px;
+        }
 
-       li {
-           float: right;
-       }
+        #w3{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #E7E9EB;
+            width: 40%;
+            text-align: center;
+            border-radius: 5px;
+        }
 
-       li a {
-           display: block;
-           color: white;
-           text-align: center;
-           padding: 14px 16px;
-           text-decoration: none;
-       }
+        #Bootstrap{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: aqua;
+            width: 40%;
+            text-align: center;
+            border-radius: 5px;
 
-       li a:hover {
-           background-color: #9c8484;
-       }
+        }
+        #cc{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: palevioletred;
+            width: 40%;
+            text-align: center;
+            border-radius: 5px;
+        }
 
-           {
-           background-color: rgb(10, 33, 49);
-           list-style-type: none;
-           margin: 0;
-           padding: 0;
-       }
+        #ccc{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #FFF4A3;
+            width: 40%;
+            text-align: center;
+            border-radius: 5px;
+        }
 
-       li {
-           display: inline;
-       }
+        #r{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #D9EEE1;
+            width: 16%;
+            text-align: center; 
+            border-radius: 5px;   
+        }
 
-       div {
-           display: inline-block;
-           background-color: rgb(209, 193, 87);
-           width: 500px;
-           background-radius;
-           padding: 50px;
-           margin: 30px;
+        #kot{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #f3ECEA;
+            width: 15%;
+            text-align: center; 
+            border-radius: 5px;   
+        }
 
-           border: 2px solid red;
-           border-radius: 8px;
-           padding: 30px;
-       }
+        #node{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #96D4D4;
+            width: 16%;
+            text-align: center; 
+            border-radius: 5px;   
+        }
 
-       #venky {
-           background-color: rgb(185, 165, 241);
-       }
+        #rea{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #FFC0C7;
+            width: 16%;
+            text-align: center;  
+            border-radius: 5px;  
+        }
 
-       #java {
-           background-color: cadetblue;
-       }
+        #json{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: skyblue;
+            width: 16%;
+            text-align: center; 
+            border-radius: 5px;   
+        }
 
-       #w3css {
-           background-color: rgb(150, 107, 175);
-       }
+        #vue{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #D9EEE1;
+            width: 15%;
+            text-align: center; 
+            border-radius: 5px;   
+        }
+        #my{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #f3ECEA;
+            width: 16%;
+            text-align: center; 
+            border-radius: 5px;   
+        }
 
-       #venkat {
-           background-color: brown
-       }
-       #ravi
-       {
-           background-color: rgb(78, 31, 207);
-       }
+        #xml{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #96D4D4;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
 
-       #aa{
-           background-color: black;
-           padding: 30px;
-       }
-       #a{
-           background-color: pink;
-           width: 40%;
-           padding: 10px;text-align: center;
-           border-radius: 5px;margin: 20px;
-           display: inline-block;
-       }
-       #b{
-           width: 40%;text-align: center;
-           padding: 10px;display: inline-block;
-           border-radius: 5px;margin: 20px;
-       }
-       #c{
-           width: 40%;
-           background-color: salmon;
-           padding: 10px;text-align: center;
-           border-radius: 5px;display: inline-block;margin: 20px;
-       }
-       #d{
-           width: 260px;
-           padding: 5px;text-align: center;
-           border-radius: 5px;display: inline-block;
-           margin: 25px;
+        #sass{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: olivedrab;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
 
-       }
-   </style></style>
+        #icon{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+           background-color: skyblue;
+            width: 15%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #rwd{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #D9EEE1;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #graphics{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #f3ECEA;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #svg{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: aliceblue;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #canvas{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: olivedrab;
+            width: 15%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        
+        #rasp{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: skyblue;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        
+        #cyber{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #D9EEE1;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+
+
+        #colors{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #FFC0C7;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #git{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: aliceblue;
+            width: 15%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+ 
+        #mat{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: olivedrab;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #numpay{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: skyblue;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #panda{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #FFF4A3;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #scipy{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #FFC0C7;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #asp{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: aliceblue;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #angular{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: olivedrab;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #appmi{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: lightgoldenrodyellow;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #go{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #FFF4A3;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #script{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #FFC0C7;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+        #django{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: aliceblue;
+            width: 16%;
+            text-align: center;    
+            border-radius: 5px;
+        }
+
+
+        #excel{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #96D4D4;
+            width: 41%;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #dsa{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #FFC0C7;
+            width: 41%;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #machine{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #FFF4A3;
+            width: 41%;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #art{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            background-color: #D9EEE1;
+            width: 41%;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+
+
+
+
+    </style>
 </head>
-<body><fieldset>
-   <h2>W3schools</h2>
-       <center>
-           <ul>
-               <li><a href="https://www.w3schools.com/html/default.asp">
-                       <font color="white">HTML</font>
-                   </a></li>
-               <li><a href="https://www.w3schools.com/css/default.asp">
-                       <font color="white"> CSS
-                   </a></font>
-               </li>
-               <li><a href="https://www.w3schools.com/js/default.asp">
-                       <font color="white"> JAVASCRIPT</font>
-                   </a></li>
-               <li><a href="https://www.w3schools.com/sql/default.asp">
-                       <font color="white"> SQL</font>
-                   </a></li>
-               </font>
-               <li><a href="https://www.w3schools.com/python/default.asp">
-                       <font color="white">PYTHON</font>
-                   </a></li>
-               <li><a href="https://www.w3schools.com/java/default.asp">
-                       <font color="white"> JAVA
-                   </a></font>
-               </li>
-               <li><a href="https://www.w3schools.com/php/default.asp">
-                       <font color="white"> PHP</font>
-                   </a></li>
-               <li><a href="https://www.w3schools.com/howto/default.asp">
-                       <font color="white"> HOW TO</font>
-                   </a></li>
-               </font>
-               <li><a href="https://www.w3schools.com/c/index.php">
-                       <font color="white">C</font>
-                   </a></li>
-               <li><a href="https://www.w3schools.com/cpp/default.asp">
-                       <font color="white"> C++
-                   </a></font>
-               </li>
-               <li><a href="https://www.w3schools.com/cs/index.php">
-                       <font color="white">C#</font>
-                   </a></li>
-               <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">
-                       <font color="white">BOOTSTRAP </font>
-                   </a></li>
-               </font>
-               <li><a href="https://www.w3schools.com/react/default.asp">
-                       <font color="white">REACT</font>
-                   </a></li>
-               <li><a href="https://www.w3schools.com/mysql/default.asp">
-                       <font color="white">MY SQL
-                   </a></font>
-               </li>
-               <li><a href="https://www.w3schools.com/jquery/default.asp">
-                       <font color="white"> J QUERY</font>
-                   </a></li>
-               <li><a href="https://www.w3schools.com/excel/index.php">
-                       <font color="white">EXCEL</font>
-                   </a></li>
-               </font>
-               <li><a href="https://www.w3schools.com/xml/default.asp">
-                       <font color="white">XMLL</font>
-                   </a></li>
-               <li><a href="https://www.w3schools.com/django/index.php">
-                       <font color="white">D JANGO
-                   </a></font>
-               </li>
-           </ul>        </div>
-           <div id="ravi">
-               <center>
-                   <font size="6 "><b>PHP</b></font> <br> <br> A web server programming language
-               </center>
-               <br><br>
-               <center><input type="button" value="Learn PHP"
-                       style="border-radius: 10px;height: 30px;font-size: large;color: white;background-color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
 
+<body>
+    <br><marquee behavior="" direction="right"><h1 style="color: orangered;">W3.SCHOOLS PAGE</h1></marquee>
+  <div id="background">
+    <div id="php" >
+    <h1>PHP</h1>
+    <h4>A web server programming language</h4>
+    <button id="but">Learn PHP</button>
 
-               </center>
-           </div>
+    </div>
+        <div id="jquery">
+            <h1>jQuery</h1>
+            <h4>A JS library for developing web pages</h4>
+            <button id="but">Learn PHP</button>
+    </div>
 
-           <div id="venky">
-               <center>
-                   <font size="6 "><B>J QUERY</B></font> <br> <br> A JS library for developing web pages
-               </center>
-               <br><br>
-               <center>
-                   <input type="button" value="Learn jQuery"
-                       style="border-radius: 10px;height: 30px;font-size: large;color: white;background-color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-               </center>
-           </div>
-           <div id="java">
-               <center>
-                   <font size="6 "><b>JAVA</b></font> <br> <br>A programming language
-               </center>
-               <br><br>
-               <center>
-                   <input type="button" value="Learn JAVA"
-                       style="border-radius: 10px;height: 30px;font-size: large;color: white;background-color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-               </center>
-           </div>
-           <div id="w3css">
-               <center>
-                   <font size="6 "><b>C++</b></font> <br> <br>A programming language
-               </center>
-               <br><br>
-               <center>
-                   <input type="button" value="Learn C++"
-                       style="border-radius: 10px;height: 30px;font-size: large;color: white;background-color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-               </center>
-           </div>
-           <div id="">
-               <center>
-                   <font size="6 "><b>BOOTSTRAP</b></font> <br> <br>A CSS framework for faster and better responsive
-                   web pages
-               </center>
-               <br><br>
-               <center>
-                   <input type="button" value="Learn BOOTSTRAP"
-                       style="border-radius: 10px;height: 30px;font-size: large;color: white;background-color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-               </center>
-           </div>
-           <div id="venkat">
-               <center>
-                   <font size="6 "><b>W3.css</b></font> <br> <br>A programming language
-               </center>
-               <br><br>
-               <center>
-                   <input type="button" value="Learn W3.css"
-                       style="border-radius: 10px;height: 30px;font-size: large;color: white;background-color: black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <div id="js">
+        <h1>JAVA</h1>
+        <p>We are learning about Java-Script</p>
+        <button id="but">Learn Java</button>
+    </div>
 
+    <div id="c">
+        <h1>C++</h1>
+        <p>A programming language</p>
+        <button id="but">Learn C++</button>
+    </div>
 
-               </center>
-           </div>
-           
-           <br><br><br><br>
-       <div id="c">
-           <h1>C</h1>           
-       </div>
-       <div id="c" style="background-color: yellow;">
-           <h1>C#</h1>           
-       </div>
-       <div id="d" style="background-color: whitesmoke;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">R</h1>           
-       </div>
-       <div id="d" style="background-color: thistle;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Kotlin</h1>           
-       </div>
-       <div id="d" style="background-color: turquoise;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Node.js</h1>           
-       </div>
-       <div id="d" style="background-color: pink;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">React</h1>           
-       </div>
-       <div id="d" style="background-color:yellow;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">JSON</h1>           
-       </div>
-       <div id="d" style="background-color: whitesmoke;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Vue</h1>           
-       </div>
-       <div id="d" style="background-color: lightblue;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">My SQL</h1>           
-       </div>
-       <div id="d" style="background-color: turquoise;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">XML</h1>           
-       </div>
-       <div id="d" style="background-color:rgb(238, 165, 157);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Sass</h1>           
-       </div>
-       <div id="d" style="background-color:rgb(209, 209, 103)">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Icons</h1>           
-       </div>
-       <div id="d" style="background-color: whitesmoke;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">RWD</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(169, 226, 169);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Graphics</h1>           
-       </div>
-       <div id="d" style="background-color:rgb(155, 240, 232);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">SVG</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(236, 155, 146);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Canvas</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(225, 225, 137);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Raspberry Pi</h1>           
-       </div>
-       <div id="d" style="background-color: whitesmoke;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Cyber Security</h1>          
-       </div>
-       <div id="d" style="background-color:rgb(203, 240, 203);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Colors</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(160, 212, 207);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Git</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(236, 178, 172);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Matplotlib</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(227, 227, 155);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">NumPy</h1>           
-       </div>
-       <div id="d" style="background-color:whitesmoke;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Pandas</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(173, 231, 173);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">SciPy</h1>           
-       </div>
-       <div id="d" style="background-color: lightblue;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">ASP</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(233, 164, 157);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">AngularJS</h1>           
-       </div>
-       <div id="d" style="background-color:rgb(221, 221, 118);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">AppML</h1>           
-       </div>
-       <div id="d" style="background-color: whitesmoke;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Go</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(194, 238, 194);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">TypeScript</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(141, 224, 219)">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Django</h1>           
-       </div>
-       <div id="d" style="background-color:rgb(231, 171, 165);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">MongoDB</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(232, 232, 148);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Statistics</h1>           
-       </div>
-       <div id="d" style="background-color: white;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Data Science</h1>           
-       </div>
-       <div id="d" style="background-color: rgb(178, 224, 178);">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Typing Speed</h1>           
-       </div>
-       <div id="d" style="background-color:turquoise;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">HowTo</h1>           
-       </div>
-       <div id="d" style="background-color: salmon">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Code Game</h1>           
-       </div>
-       <div id="d" style="background-color: yellow;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Spaces</h1>           
-       </div>
-       <div id="d" style="background-color: white;">
-           <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">PostgreSQL</h1>           
-       </div>
-       <div id="c" style="background-color: turquoise;">
-           <h1>Excel</h1>           
-       </div>
-       <div id="c" style="background-color: yellow;">
-           <h1>DSA-Data Structures and Algorithims</h1>           
-       </div>
+    <div id="w3">
+        <h1>W3.CSS</h1>
+        <p>A CSS framework for faster and better responsive web pages</p>
+        <button id="but">Learn w3.css</button>
+    </div>
 
-       <div id="c" style="background-color:rgb(232, 176, 169);">
-           <h1>Machine Learning</h1>           
-       </div>
-       <div id="c" style="background-color: whitesmoke;">
-           <h1>Artificial Intelligence</h1>           
-       </div>
+    <div id="Bootstrap">
+        <h1>BOOTSTRAP</h1>
+        <p>A CSS framework for designing better web pages</p>
+        <button id="but" style="width:auto">Learn Bootstrap</button>
+    </div>
 
-       </div>
+    <div id="cc">
+        <h1>C</h1>
+    </div>
+
+    <div id="ccc">
+        <h1>C#</h1>
+    </div>
+
+    <div id="r">
+        <h1>R</h1>
+    </div>
+
+    <div id="kot">
+        <h1>Kotlin</h1>
+    </div>
+
+    <div id="node">
+        <h1>Node.Js</h1>
+    </div>
+
+    <div id="rea">
+        <h1>React</h1>
+    </div>
+
+    <div id="json">
+        <h1>JSON</h1>
+    </div>
+
+    <div id="vue">
+        <h1>VUE</h1>
+    </div>
+
+    <div id="my">
+        <h1>MY SQL</h1>
+    </div>
+
+    <div id="xml">
+        <h1>XML</h1>
+    </div>
+
+    <div id="sass">
+        <h1>SASS</h1>
+    </div>
+
+    <div id="icon">
+        <h1>ICONS</h1>
+    </div>
+
+    <div id="rwd">
+        <h1>RWD</h1>
+    </div>
+
+    <div id="graphics">
+        <h1>Graphics</h1>
+    </div>
+
+    <div id="svg">
+        <h1>SVG</h1>
+    </div>
+
+    <div id="canvas">
+        <h1>Canvas</h1>
+    </div>
+
+    <div id="rasp">
+        <h1>Rasspberry</h1>
+    </div>
+
+    <div id="cyber">
+        <h1>Cyber</h1>
+    </div>
+
+    <div id="colors">
+        <h1>Colors</h1>
+    </div>
+
+    <div id="git">
+        <h1>GIT</h1>
+    </div>
+
+    <div id="mat">
+        <h1>Matplotlib</h1>
+    </div>
+
+    <div id="numpay">
+        <h1>Numpay</h1>
+    </div>
+
+    <div id="panda">
+        <h1>Pandas</h1>
+    </div>
+
+    <div id="scipy">
+        <h1>Scipy</h1>
+    </div>
+
+    <div id="asp">
+        <h1>ASP</h1>
+    </div>
+
+    <div id="angular">
+        <h1>AngularJS</h1>
+    </div>
+
+    <div id="appmi">
+        <h1>APPml</h1>
+    </div>
+
+    <div id="go">
+        <h1>GO</h1>
+    </div>
+
+    <div id="script">
+        <h1>TypeScript</h1>
+    </div>
+
+    <div id="django">
+        <h1>Django</h1>
+    </div>
+
+    <div id="excel">
+        <h1>Excel</h1>
+    </div>
+
+    <div id="dsa">
+        <h1>DSA</h1>
+    </div>
+
+    <div id="machine">
+        <h1>Machine Learning</h1>
+    </div>
+
+    <div id="art">
+        <h1>Artificial Intelligence</h1>
+    </div>
+
+  </div>
 </body>
 </html>
